@@ -1,0 +1,49 @@
+article, aside, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+*
+  margin: 0
+  padding: 0
+
+h2, h3, h4, h5, p, ul, ol
+  margin: 0px
+  padding:  0
+
+img
+  border: 0px
+
+#pageContainer
+  margin: 0px auto
+  width: 960px
+
+#pageHeader
+  margin: 0px auto
+  height: 100px
+  position: relative
+
+#pageNav
+  position: absolute
+  bottom: 30px
+  left: 10px
+
+#contentContainer
+  margin: 0px
+  min-height: 500px
+  position: relative
+  overflow: hidden
+
+#pageFooter
+  margin: 0px auto
+  position: relative
+
+.clearfix
+  zoom: 1
+
+  &:before, &:after
+    content: "\0020"
+    display: block
+    height: 0
+    visibility: hidden
+
+  &:before
+    clear: both

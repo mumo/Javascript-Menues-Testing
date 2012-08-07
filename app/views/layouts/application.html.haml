@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title Menus
+    = javascript_include_tag "application"
+    = stylesheet_link_tag    "application", :media => "all"
+    = csrf_meta_tags
+  %body
+    #pageContainer
+      %header#pageHeader
+        This is the header
+      #contentContainer.clearfix
+        %section
+          = yield
+        %aside
+          This is the aside
+        %nav#pageNav
+          = render 'shared/navigation'
+      %footer#pageFooter
+        This is the footer
