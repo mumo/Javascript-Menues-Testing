@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'coffee-filter'
 gem 'haml-rails'
+gem 'jquery-rails'
 gem 'rails', '3.2.2'
 
 group :assets do
@@ -10,4 +11,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+group :production do
+  gem 'pg'
+end
