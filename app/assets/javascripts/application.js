@@ -13,5 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require jQuery.radmenu
-//= require jquery.mobile-1.1.1
+//= require jgestures
 //= require_tree .

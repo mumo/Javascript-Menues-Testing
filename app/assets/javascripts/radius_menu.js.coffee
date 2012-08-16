@@ -38,7 +38,7 @@ class @Menues.Radius
   nestedSelection: ()->
 
   bindEvents: ()->
-    $(@open_menu).bind 'tap', ()=>
+    $(@open_menu).bind 'tapone', ()=>
       unless @show
         @container.radmenu 'scale', 2
         @show = true
@@ -46,16 +46,21 @@ class @Menues.Radius
         @container.radmenu 'scale', 0.5
         @show = false
 
+    $('body').bind 'pinchopen', ()=>
+      unless @show
+        @container.radmenu 'scale', 2
+        @show = true
 
-    $('body').bind 'swiperight', ()=>
+    $('body').bind 'pinchopen', ()=>
+      if @show
+        @container.radmenu 'scale', 0.5
+        @show = false
+
+    $('body').bind 'rotatecw', ()=>
       @container.radmenu 'next'
 
-    $('body').bind 'swipeleft', ()=>
+    $('body').bind 'rotateccw', ()=>
       @container.radmenu 'prev'
 
       #$('body').bind 'orientationchange', ()->
       #alert 'hello'
-
-
-
-
