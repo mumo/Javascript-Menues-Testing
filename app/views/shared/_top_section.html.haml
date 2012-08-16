@@ -1,0 +1,6 @@
+%ul.account_menu
+  %li opt1
+  %li opt2
+  %li opt3
+= form_for :search, html: { id: 'search_form' } do |f|
+  = f.text_field :query

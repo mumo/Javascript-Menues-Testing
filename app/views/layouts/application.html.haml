@@ -8,13 +8,16 @@
   %body
     #pageContainer
       %header#pageHeader
-        This is the header
-      #contentContainer.clearfix
+        %a.account LOGIN
+        = render 'shared/top_section'
+      %nav
+        This is the nav
+      #contentContainer
         %section
           = yield
         %aside
           This is the aside
-        %nav#pageNav
+        %nav#radialNav
           = render 'shared/navigation'
       %footer#pageFooter
         This is the footer

@@ -12,6 +12,10 @@ h2, h3, h4, h5, p, ul, ol
 img
   border: 0px
 
+section, header, aside, nav, footer
+  border: 1px solid black
+  border-radius: 5px
+
 #pageContainer
   margin: 0px auto
   width: 960px
@@ -20,17 +24,46 @@ img
   margin: 0px auto
   height: 100px
   position: relative
+  background: url('/assets/rails.png') 5px center white no-repeat
 
-#pageNav
+  .account
+    margin: 0px auto
+    width: 100px
+    background: red
+    text-align: center
+    display: block
+
+  .account_menu
+    position: absolute
+    top: 5px
+    right: 5px
+    li
+      display: inline
+
+  #search_form
+    position: absolute
+    right: 5px
+    bottom: 20px
+
+#radialNav
   position: absolute
   bottom: 30px
   left: 10px
 
 #contentContainer
   margin: 0px
-  min-height: 500px
   position: relative
   overflow: hidden
+
+  section
+    width: 650px
+    float: left
+    min-height: 500px
+
+  aside
+    width: 300px
+    float: right
+    min-height: 500px
 
 #pageFooter
   margin: 0px auto
