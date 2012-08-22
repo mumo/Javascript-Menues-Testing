@@ -46,21 +46,11 @@ class @Menues.Radius
         @container.radmenu 'scale', 0.5
         @show = false
 
-    $('body').bind 'pinchopen', ()=>
-      unless @show
-        @container.radmenu 'scale', 2
-        @show = true
-
-    $('body').bind 'pinchopen', ()=>
-      if @show
-        @container.radmenu 'scale', 0.5
-        @show = false
-
-    $('body').bind 'rotatecw', ()=>
+    $('body').bind 'swipeone', ()=>
       @container.radmenu 'next'
 
-    $('body').bind 'rotateccw', ()=>
-      @container.radmenu 'prev'
+      #$('body').bind 'swipeLeft', ()=>
+      #@container.radmenu 'prev'
 
       #$('body').bind 'orientationchange', ()->
       #alert 'hello'
