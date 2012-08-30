@@ -21,5 +21,11 @@
   / /content
   %div{"data-role" => "footer"}
     %h4 Page Footer
-#slide{:style => "display:none"}
-  %h2 Slide Content
+#slide{:style => "display:none", "data-role" => 'popup'}
+  %h2 Slide Contentt
+  %a{href: "javascript:$.pageslide.close()"} Close [X]
+  / /header
+  %p I'm first in the source order so I'm shown as the page.
+  %p
+    View internal page called
+
