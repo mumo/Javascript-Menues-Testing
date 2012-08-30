@@ -1,0 +1,25 @@
+#foo{"data-role" => "page"}
+  %div{"data-role" => "header"}
+    %h1 Foo
+  / /header
+  %div{"data-role" => "content"}
+    %p I'm first in the source order so I'm shown as the page.
+    %p
+      View internal page called
+      %a.changepage{:href => "#bar"} bar
+  / /content
+  %div{"data-role" => "footer"}
+    %h4 Page Footer
+#bar{"data-role" => "page"}
+  %div{"data-role" => "header"}
+    %h1 Bar
+  / /header
+  %div{"data-role" => "content"}
+    %p I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.
+    %p
+      %a.changepage{:href => "#foo"} Back to foo
+  / /content
+  %div{"data-role" => "footer"}
+    %h4 Page Footer
+#slide{:style => "display:none"}
+  %h2 Slide Content

@@ -10,8 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+//
 //= require jquery
-//= require jquery_ujs
-//= require jQuery.radmenu
-//= require jgestures
-//= require radius_menu
+//= require mobile-bindings
+//= require jquery.mobile-1.2.0-alpha.1
+//= require jquery.pageslide
